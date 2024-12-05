@@ -1,0 +1,78 @@
+:root{
+    --my_green: #C0E0D7;
+    --my_pink: #FFD1DC;
+    --semitransparent_pink: rgba(255, 209, 220, 0.75);
+    --semitransparent_white: rgba(255, 255, 255, 0.75);
+    --text_box_height: 3rem;
+    --header_text_size: 4rem;
+    --input_text_size: 2rem;
+    --link_text_size: 1rem;
+
+    background-color: var(--my_green);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.margin{
+    margin: 2rem auto;
+}
+
+.margin-top{
+    margin: 2rem 0 0 0;
+}
+
+.centralize{
+    display: block;
+    margin: auto 0;
+}
+
+a.not_decorated{
+    text-decoration: none;
+    color: inherit;
+}
+
+.pink_panel{
+    width: 70%;
+    background-color: var(--semitransparent_pink);
+}
+
+.white_panel{
+    width: 100%;
+    background-color: var(--semitransparent_white);
+}
+
+.my_input{
+    border: none;
+    width: 100%;
+    height: var(--text_box_height);
+    margin: 1rem 0;
+    font-size: var(--input_text_size);
+}
+.my_input::placeholder{
+    font-size: var(--input_text_size);
+}
+
+.my_button{
+    width: 40%;
+    height: var(--text_box_height);
+    border: none;
+    font-size: var(--input_text_size);
+}
+
+.resize{
+    width: 70%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: var(--header_text_size);
+}
+
+a.link_sized{
+    font-size: var(--link_text_size);
+}
