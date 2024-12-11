@@ -104,8 +104,13 @@ button:hover {
 .wrapper {
     min-height: 100%;
     width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
+}
+.wrapper>main {
+  min-height: 100%;
+  width: 50%;
 }
 footer {
   text-align: center;
