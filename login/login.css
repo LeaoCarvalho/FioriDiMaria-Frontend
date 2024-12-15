@@ -76,3 +76,7 @@ nav ul li{
 a.link_sized{
     font-size: var(--link_text_size);
 }
+
+.nomargin{
+    margin: 0;
+}

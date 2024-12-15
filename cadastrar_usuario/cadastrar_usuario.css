@@ -195,3 +195,7 @@ a.link_sized{
 .inline{
     display: inline;
 }
+
+.nomargin{
+    margin: 0;
+}

@@ -139,3 +139,7 @@ a.link_sized{
 .adjust_text_size{
     font-size: var(--input_text_size);
 }
+
+.nomargin{
+    margin: 0;
+}
