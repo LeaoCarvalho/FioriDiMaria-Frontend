@@ -1,0 +1,164 @@
+:root{
+    --my_green: #C0E0D7;
+    --my_pink: #FFD1DC;
+    --semitransparent_pink: rgba(255, 209, 220, 0.75);
+    --semitransparent_white: rgba(255, 255, 255, 0.75);
+    --text_box_height: 3rem;
+    --header_text_size: 4rem;
+    --input_text_size: 2rem;
+    --link_text_size: 1rem;
+
+    background-color: var(--my_green);
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+header {
+  padding: 10px;
+}
+
+main {
+  text-align: center;
+  /* margin: 20px auto; */
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cart {
+  background-color: #f9ccd0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  /* max-width: 800px; */
+  margin: 0 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper>main {
+  min-height: 100%;
+  width: 50%;
+}
+
+.barra-progresso {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(to right, #f8a5c2, #f8d7da);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progresso {
+  width: 100%; /* 100% preenchido */
+  height: 100%;
+  background: #e57399;
+  border-radius: 15px;
+}
+
+.porcentagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text i {
+  font-style: italic;
+}
+
+.text b {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  width: 100%;
+  height: 76px;
+  background-color: var(--semitransparent_white);
+  padding: 10px;
+  margin-top: auto; /* Faz o rodapé ir para o fim */
+}
+.total{
+    border-bottom: none;
+    padding-bottom: 0.01em;
+}
+
+.barra-container {
+  width: 80%;
+  max-width: 600px;
+  /* display: flex;
+  align-items: center; */
+}
+
+.barra-progresso {
+  width: 100%;
+  height: 30px;
+  background-color: #ddd; /* Cor de fundo da barra */
+  border-radius: 15px;
+  border: 1px solid #56B194;
+  overflow: hidden; /* Garante que o conteúdo da barra não ultrapasse o limite */
+}
+
+.progresso {
+  width: 100%; /* Define 100% como exemplo */
+  height: 100%;
+  background: linear-gradient(
+      to right, 
+      #FFD1DC 0%,  
+      #FC85BF 15%, 
+      #FFD1DC 30%, 
+      #FC85BF 45%, 
+      #FFD1DC 60%, 
+      #FC85BF 75%, 
+      #FFD1DC 90%, 
+      #FC85BF 100% 
+  );
+}
+.text{
+  width: 80%;
+  text-align: center;
+}
+
+img {
+  max-width: 300px;
+  height: auto;
+}
